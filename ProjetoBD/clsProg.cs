@@ -144,13 +144,26 @@ namespace ProjetoBD
         {
             conexao.Open();
             SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = "usp_consultarPedidos";
             comando.Parameters.AddWithValue("@idCli", _idUser);
+            SqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Read();
+                _idUser = reader["id"].ToString();
+                _situacao = "usuario logado";
+            }
+            else
+            {
+                _situacao = "erro no login: informações inválidas";
+            }
+
 
         } // falta arrumar isso aqui 
 
-      
+
 
         public void VerificarInfo(string[] info)
         {
