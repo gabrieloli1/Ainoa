@@ -25,6 +25,7 @@ namespace ProjetoBD
             Response.Write($"<script>alert('{prog.Situacao}');</script>");
             Response.Redirect("paginaLogin.aspx");
             //teste
+
         }
     }
-}
+};
