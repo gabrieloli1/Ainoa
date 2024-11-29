@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsProg.cs" />
+    <Compile Include="dfkbhczxdsfhbdxfjcvhfdshjhbfdsj.cs" />
     <Compile Include="paginaCadastro.aspx.cs">
       <DependentUpon>paginaCadastro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
