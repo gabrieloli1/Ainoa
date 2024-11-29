@@ -23,6 +23,9 @@ namespace ProjetoBD
 
             prog.cadUser(txtNome.Text, txtCPF.Text, txtEmail.Text, txtSenha.Text, txtRua.Text, txtCEP.Text, txtCidade.Text, txtEstado.Text, txtComplemento.Text);
             Response.Write($"<script>alert('{prog.Situacao}');</script>");
+            //teste 123 
+            //teste 123
+
             Response.Redirect("paginaLogin.aspx");
             //teste
 

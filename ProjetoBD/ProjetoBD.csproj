@@ -67,9 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fundo.jpg" />
     <Content Include="paginaCadastro.aspx" />
     <Content Include="paginaLogin.aspx" />
     <Content Include="paginaProduto.aspx" />
+    <Content Include="pagUser.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +96,13 @@
     </Compile>
     <Compile Include="paginaProduto.aspx.designer.cs">
       <DependentUpon>paginaProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagUser.aspx.cs">
+      <DependentUpon>pagUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagUser.aspx.designer.cs">
+      <DependentUpon>pagUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
