@@ -133,10 +133,12 @@
 
 /* Estilos gerais */
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+        }
 
 body {
     font-family: Arial, sans-serif;
@@ -216,10 +218,12 @@ button:hover, .asp-button:hover {
 /* Responsividade para dispositivos móveis */
 /* Estilos gerais */
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+        }
 
 body {
     font-family: Arial, sans-serif;
