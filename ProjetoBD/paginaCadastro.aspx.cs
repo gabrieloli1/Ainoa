@@ -24,5 +24,5 @@ namespace ProjetoBD
             Response.Redirect("paginaLogin.aspx");
         }
       }
-    }
+    
 };
