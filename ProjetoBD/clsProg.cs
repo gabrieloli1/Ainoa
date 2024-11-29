@@ -148,22 +148,29 @@ namespace ProjetoBD
             comando.CommandText = "usp_consultarPedidos";
             comando.Parameters.AddWithValue("@idCli", _idUser);
 
-        } // falta arrumar isso aqui
+        } // falta arrumar isso aqui 
 
-        public void verificarInfo(string[] info)
+      
+
+        public void VerificarInfo(string[] info)
         {
-            _verificacao = false;
+            if (info == null || info.Length == 0) // Valida o array nulo ou vazio
+            {
+                _verificacao = false;
+                return;
+            }
+
+            _verificacao = true; // Presume válido inicialmente
 
             foreach (string item in info)
             {
-                if (string.IsNullOrEmpty(item) || item.Length <= 5 || item.Length > 100)
+                if (string.IsNullOrEmpty(item) || item.Length <= 15 || item.Length > 100)
                 {
-                    _verificacao = false;
-                    break;
+                    _verificacao = false; // Marca como inválido se qualquer item falhar
+                    break; // Sai do loop cedo
                 }
             }
-
-            _verificacao = true;
         }
+
     }
 }
