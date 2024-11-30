@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="fundo.jpg" />
+    <Content Include="index.aspx" />
     <Content Include="paginaCadastro.aspx" />
     <Content Include="paginaLogin.aspx" />
     <Content Include="paginaProduto.aspx" />
@@ -75,6 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsProg.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="paginaCadastro.aspx.cs">
       <DependentUpon>paginaCadastro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
