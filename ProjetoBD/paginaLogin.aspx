@@ -45,6 +45,12 @@
             margin-bottom: 5vh; 
         }
 
+        #linkcad {
+            display:flex;
+            flex-direction:column;
+
+        }
+
         h1 {
             color: #944242; /* Cor do título */
             font-size: 2.2rem; /* Aumenta o tamanho da fonte */
@@ -366,7 +372,16 @@ button:hover, .asp-button:hover {
             <label for="txtSenha">Senha:</label>
             <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" CssClass="asp-textbox" placeholder="Digite sua senha"></asp:TextBox>
         </div>
-        <asp:Button ID="btnLogin" runat="server" Text="Cadastrar" CssClass="asp-button" OnClick="btnLogin_Click" />
+        <div id="linkCad">
+            <div>
+                <p>Ainda não tem login?</p>
+            </div>
+            <div>
+                <a href="paginaCadastro.aspx">Cadastre-se</a>
+
+            </div>
+        </div>
+        <asp:Button ID="btnLogin" runat="server" Text="Logar" CssClass="asp-button" OnClick="btnLogin_Click" />
     </div>
 </form>
 
