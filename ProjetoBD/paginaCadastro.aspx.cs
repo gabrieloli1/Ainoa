@@ -18,13 +18,12 @@ namespace ProjetoBD
         {
             ClsProg prog = new ClsProg();
             string[] dados = { txtNome.Text, txtCPF.Text, txtEmail.Text, txtSenha.Text, txtRua.Text, txtCEP.Text, txtCidade.Text, txtEstado.Text, txtComplemento.Text };
-            prog.verificarInfo(dados);
-
-
+            prog.VerificarInfo(dados);
             prog.cadUser(txtNome.Text, txtCPF.Text, txtEmail.Text, txtSenha.Text, txtRua.Text, txtCEP.Text, txtCidade.Text, txtEstado.Text, txtComplemento.Text);
             Response.Write($"<script>alert('{prog.Situacao}');</script>");
             Response.Redirect("paginaLogin.aspx");
             //oiiii tudobwmm
         }
-    }
+      }
+    
 };

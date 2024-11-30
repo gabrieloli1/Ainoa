@@ -67,15 +67,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\footer.css" />
+    <Content Include="assets\css\header.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\imgs\fundo.png" />
+    <Content Include="assets\imgs\maquigem.png" />
+    <Content Include="assets\imgs\menu.png" />
+    <Content Include="assets\imgs\rosto.png" />
     <Content Include="fundo.jpg" />
+    <Content Include="index.aspx" />
     <Content Include="paginaCadastro.aspx" />
     <Content Include="paginaLogin.aspx" />
     <Content Include="paginaProduto.aspx" />
-    <Content Include="pagUser.aspx" />
+    <Content Include="sobre.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsProg.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="paginaCadastro.aspx.cs">
       <DependentUpon>paginaCadastro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -97,16 +111,16 @@
     <Compile Include="paginaProduto.aspx.designer.cs">
       <DependentUpon>paginaProduto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pagUser.aspx.cs">
-      <DependentUpon>pagUser.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pagUser.aspx.designer.cs">
-      <DependentUpon>pagUser.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sobre.aspx.cs">
+      <DependentUpon>sobre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sobre.aspx.designer.cs">
+      <DependentUpon>sobre.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\fonts\JuliusSansOne-Regular.ttf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

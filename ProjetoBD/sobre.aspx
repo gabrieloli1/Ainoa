@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pagUser.aspx.cs" Inherits="ProjetoBD.pagUser" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sobre.aspx.cs" Inherits="Ainoa.sobre" %>
 
 <!DOCTYPE html>
 

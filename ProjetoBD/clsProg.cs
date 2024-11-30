@@ -144,26 +144,47 @@ namespace ProjetoBD
         {
             conexao.Open();
             SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = "usp_consultarPedidos";
             comando.Parameters.AddWithValue("@idCli", _idUser);
+            SqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Read();
+                
+                _situacao = "usuario logado";
 
-        } // falta arrumar isso aqui
+            }
+            else
+            {
+                _situacao = "erro no login: informações inválidas";
+            }
 
-        public void verificarInfo(string[] info)
+
+        }  
+
+
+
+        public void VerificarInfo(string[] info) //arrumar esse metodo nao esta funcionando corretamente
         {
-            _verificacao = false;
+            if (info == null || info.Length == 0) 
+            {
+                _verificacao = false;
+                return;
+            }
+
+            _verificacao = true; 
 
             foreach (string item in info)
             {
-                if (string.IsNullOrEmpty(item) || item.Length <= 5 || item.Length > 100)
+                if (string.IsNullOrEmpty(item) || item.Length <= 15 || item.Length > 100)
                 {
-                    _verificacao = false;
-                    break;
+                    _verificacao = false; 
+                    break; 
                 }
             }
-
-            _verificacao = true;
         }
+
     }
 }
