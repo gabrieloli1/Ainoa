@@ -152,8 +152,9 @@ namespace ProjetoBD
             if (reader.HasRows)
             {
                 reader.Read();
-                _idUser = reader["id"].ToString();
+                
                 _situacao = "usuario logado";
+
             }
             else
             {
@@ -161,26 +162,26 @@ namespace ProjetoBD
             }
 
 
-        } // falta arrumar isso aqui 
+        }  
 
 
 
-        public void VerificarInfo(string[] info)
+        public void VerificarInfo(string[] info) //arrumar esse metodo nao esta funcionando corretamente
         {
-            if (info == null || info.Length == 0) // Valida o array nulo ou vazio
+            if (info == null || info.Length == 0) 
             {
                 _verificacao = false;
                 return;
             }
 
-            _verificacao = true; // Presume válido inicialmente
+            _verificacao = true; 
 
             foreach (string item in info)
             {
                 if (string.IsNullOrEmpty(item) || item.Length <= 15 || item.Length > 100)
                 {
-                    _verificacao = false; // Marca como inválido se qualquer item falhar
-                    break; // Sai do loop cedo
+                    _verificacao = false; 
+                    break; 
                 }
             }
         }
