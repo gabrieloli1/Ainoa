@@ -21,7 +21,7 @@
             <a href="index.aspx">Home</a>
             <a href="sobre.aspx">Sobre</a>
             <a href="produtos.aspx">Produtos</a>
-            <a id="txtLogin" href="login.aspx">Login</a>
+            <a id="txtLogin" href="paginaLogin.aspx">Login</a>
         </asp:Panel>
         <header>
                 <asp:ImageButton ID="btnImage" ImageUrl="assets/imgs/menu.png" runat="server" OnClick="btnImage_Click   "/>
