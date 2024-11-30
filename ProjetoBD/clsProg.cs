@@ -15,14 +15,13 @@ namespace ProjetoBD
         private string _situacao;
         static private string _idUser;
         private bool _verificacao;
-        private string nome;
-        private int qntPedido;
-        private int valorPedido;
-
-
-
+        private string _nomeProd;
+        private int _qntPedido;
+        private int _valorPedido;
+        private string _detalhePed;
         private SqlConnection conexao;
 
+        public int qntPedido { get => _qntPedido;}
         public string Situacao { get => _situacao; }
         public bool Verificacao { get => _verificacao; }
         public string IdUser { get => _idUser; }
