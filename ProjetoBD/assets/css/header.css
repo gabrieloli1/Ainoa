@@ -1,0 +1,128 @@
+﻿* {
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Julius Sans One';
+    src: url('assets/fonts/JuliusSansOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display:flex;
+    background-color: black;
+    width: 100%;
+    height: 4em;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#btnClose {
+    font-size: 50px;
+}
+
+#d2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amano {
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    align-self: center;
+    position: fixed;
+}
+
+#txtLogin {
+    display: flex;
+    background: #ff4fff;
+    width: 50%;
+    border-radius: 10px;
+    
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Julius Sans One';
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+        background: #;
+    }
+
+#d1 {
+    display: flex;
+    justify-content: start; 
+    margin-left: 0;
+    transition: margin-left 0.5s;
+}
+
+.visible {
+    left: 0;
+    transform: translateX(-100%);
+    animation: rolarDireita 0.5s forwards ease-out;
+}
+
+@keyframes rolarDireita {
+    from {
+        opacity: 0;
+        transform: translate(-100%);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#btnImage {
+    align-self: flex-start;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+}
+
+.sidenav.closing {
+    animation: closeSidenav 0.5s forwards ease-out;
+}
+
+@keyframes closeSidenav {
+    from {
+        left: 0; 
+        opacity: 1;
+    }
+
+    to {
+        left: -250px; 
+        opacity: 0; 
+    }
+}
+

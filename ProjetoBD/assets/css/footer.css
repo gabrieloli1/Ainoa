@@ -1,0 +1,168 @@
+﻿* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background: #000000;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.colu {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.colu h3 {
+    position: relative;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.colu p {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin: 20px 0;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+}
+
+div.col #especial {
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1em;
+    }
+
+.far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    outline: none;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 196, 196);
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    text-align: left;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #0c0c0c;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        bottom: unset;
+    }
+
+    .col {
+        margin-left: 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col h3 {
+        color: white;
+    }
+}
