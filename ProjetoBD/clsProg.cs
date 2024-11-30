@@ -15,6 +15,10 @@ namespace ProjetoBD
         private string _situacao;
         static private string _idUser;
         private bool _verificacao;
+        private string nome;
+        private int qntPedido;
+        private int valorPedido;
+
 
 
         private SqlConnection conexao;
