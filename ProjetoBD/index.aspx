@@ -14,7 +14,7 @@
     <link href="assets/css/footer.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
 </head>
-<body>
+<body>//
     <form id="form1" runat="server">
         <asp:Panel ID="pnlSidenav" runat="server" CssClass="sidenav">
             <asp:LinkButton ID="btnClose" runat="server" OnClick="btnClose_Click" CssClass="closebtn" Text="&times;"></asp:LinkButton>
