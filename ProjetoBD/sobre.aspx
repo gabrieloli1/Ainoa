@@ -27,6 +27,20 @@
                 <asp:ImageButton ID="btnImage" ImageUrl="assets/imgs/menu.png" runat="server" OnClick="btnImage_Click   "/>
                 <a id="amano" href="index.aspx">AINOA</a>
         </header>
+        <main>
+                        <div id="title">
+                <h1>Drills</h1>
+            </div>
+            <div id="content">
+                <div id="purple ">
+                </div>
+                <svg id="bg" style="background-color:#ffffff;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#8A5858"></path>
+                </svg>    
+                <div id="white" style="color:red">
+                </div>
+            </div>
+        </main>
         <footer>
     <div class="row">
         <div class="colu">
