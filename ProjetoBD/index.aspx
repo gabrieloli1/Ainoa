@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poetsen+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <title>AINOA</title>
-    <link href="assets/css/header.css" rel="stylesheet" />
-    <link href="assets/css/footer.css" rel="stylesheet" />
+    <link href="assets/css/header.css?v=2" rel="stylesheet" />
+    <link href="assets/css/footer.css?v=2" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 <body>//
