@@ -120,7 +120,7 @@
 
 main {
     display: flex;
-    background-image: url('assets/imgs/fundo.png');
+    background-color: #8A5858;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
