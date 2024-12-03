@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="paginaCadastro.aspx.cs" Inherits="ProjetoBD.paginaCadastro" %>
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <style>
-   
         * {
             margin: 0;
             padding: 0;
@@ -96,266 +94,67 @@
         .form-group + .form-group {
             margin-top: 3vh; 
         }
-        /* Estilos gerais já existentes permanecem aqui */
 
-/* Ajustes específicos para dispositivos móveis */
-@media (max-width: 768px) {
-    body {
-        padding: 0 3%;
-        height: auto; /* Permite ajuste dinâmico da altura */
-    }
-
-    .container {
-        padding: 5%;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
-        min-width: auto;
-    }
-
-    h1 {
-        font-size: 1.8rem; /* Reduz o tamanho do título */
-    }
-
-    .form-group label {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte do label */
-    }
-
-    .form-group input, .form-group .asp-textbox {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte do input */
-        padding: 1.5vh; /* Reduz o espaçamento interno */
-    }
-
-    button, .asp-button {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte do botão */
-        padding: 1.2vh; /* Ajusta o espaçamento interno */
-    }
-}
-
-/* Estilos gerais */
-* {
-    padding: 0;
-    box-sizing: border-box;
-            margin-left: 0;
-            margin-right: 0;
-            margin-top: 0;
+        /* Estilos do botão "Sair" */
+        .btn-sair {
+            position: absolute;
+            top: 20px;
+            left: 20px; /* Posicionando no canto esquerdo */
+            background-color: #d9534f; /* Cor vermelha */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
         }
 
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('fundo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ajusta o fundo ao tamanho da tela */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    padding: 0;
-}
-
-.container {
-    background-color: #E5BEBF;
-    padding: 3vh 5%; 
-    border-radius: 5px; /* Bordas menos arredondadas */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px; /* Ajusta para telas menores */
-    text-align: center;
-}
-
-h1 {
-    color: #944242;
-    font-size: 1.8rem;
-    margin-bottom: 2vh;
-    font-weight: bold;
-}
-
-.form-group {
-    margin-bottom: 2.5vh;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5vh;
-    color: #5a5a5a;
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-.form-group input, .form-group .asp-textbox {
-    width: 100%;
-    padding: 1.5vh;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-group input:focus, .form-group .asp-textbox:focus {
-    outline: none;
-    border-color: #944242;
-    box-shadow: 0px 0px 5px rgba(148, 66, 66, 0.5);
-}
-
-button, .asp-button {
-    background-color: #944242; 
-    color: white;
-    padding: 1.5vh 2vw;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 2vh; 
-    width: 100%;
-}
-
-button:hover, .asp-button:hover {
-    background-color: #7a3535; 
-}
-
-/* Responsividade para dispositivos móveis */
-/* Estilos gerais */
-* {
-    padding: 0;
-    box-sizing: border-box;
-            margin-left: 0;
-            margin-right: 0;
-            margin-top: 0;
+        .btn-sair:hover {
+            background-color: #c9302c; /* Cor vermelha escura no hover */
         }
 
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('fundo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Fundo ocupa o tamanho total da tela */
-    margin: 0 auto;
-    padding: 0;
-}
+        /* Responsividade */
+        @media (max-width: 768px) {
+            body {
+                padding: 0 3%;
+                height: auto; /* Permite ajuste dinâmico da altura */
+            }
 
-.container {
-    background-color: #E5BEBF;
-    padding: 3vh 5%;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 600px; /* Largura máxima para desktops */
-    text-align: center;
-}
+            .container {
+                padding: 5%;
+                margin-top: 3vh;
+                margin-bottom: 3vh;
+                min-width: auto;
+            }
 
-h1 {
-    color: #944242;
-    font-size: 2rem;
-    margin-bottom: 2vh;
-    font-weight: bold;
-}
+            h1 {
+                font-size: 1.8rem; /* Reduz o tamanho do título */
+            }
 
-.form-group {
-    margin-bottom: 3vh;
-    text-align: left;
-}
+            .form-group label {
+                font-size: 0.9rem; /* Ajusta o tamanho da fonte do label */
+            }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.8vh;
-    color: #5a5a5a;
-    font-size: 1rem;
-    font-weight: bold;
-}
+            .form-group input, .form-group .asp-textbox {
+                font-size: 0.9rem; /* Ajusta o tamanho da fonte do input */
+                padding: 1.5vh; /* Reduz o espaçamento interno */
+            }
 
-.form-group input, .form-group .asp-textbox {
-    width: 100%;
-    padding: 1.5vh;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-group input:focus, .form-group .asp-textbox:focus {
-    outline: none;
-    border-color: #944242;
-    box-shadow: 0px 0px 5px rgba(148, 66, 66, 0.5);
-}
-
-button, .asp-button {
-    background-color: #944242; 
-    color: white;
-    padding: 1.8vh 2vw;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    margin-top: 2vh;
-    width: 100%;
-}
-
-button:hover, .asp-button:hover {
-    background-color: #7a3535; 
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    .container {
-        max-width: 90%; /* Aumenta a largura para 90% da tela */
-        padding: 4%;
-    }
-
-    h1 {
-        font-size: 1.6rem; /* Ajuste do tamanho do título */
-    }
-
-    .form-group label {
-        font-size: 0.9rem; /* Ajuste do tamanho da fonte do label */
-    }
-
-    .form-group input, .form-group .asp-textbox {
-        font-size: 1rem; /* Ajuste do tamanho da fonte dos campos */
-        padding: 1.5vh; /* Ajuste de espaçamento */
-    }
-
-    button, .asp-button {
-        font-size: 1rem; /* Ajuste de tamanho do botão */
-        padding: 1.6vh 2vw; /* Ajuste de espaçamento interno do botão */
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        max-width: 100%; /* Ainda mais largo em telas muito pequenas */
-        padding: 5%;
-    }
-
-    h1 {
-        font-size: 1.4rem; /* Título menor para telas muito pequenas */
-    }
-
-    .form-group input, .form-group .asp-textbox {
-        padding: 1.09vh; /* Reduzindo o padding em telas menores */
-    }
-
-    button, .asp-button {
-        font-size: 0.9rem; /* Ajuste do tamanho do botão */
-        padding: 1.4vh 2vw; /* Ajuste do tamanho do botão em telas menores */
-    }
-}
-
-}
-
-
+            button, .asp-button {
+                font-size: 0.9rem; /* Ajusta o tamanho da fonte do botão */
+                padding: 1.2vh; /* Ajusta o espaçamento interno */
+            }
+        }
     </style>
 </head>
 
 <body>
-        <form id="form1" runat="server">
+    <form id="form1" runat="server">
         <header>
-
+            <!-- Botão de sair -->
+            <asp:Button ID="btnSair" runat="server" Text="Sair" CssClass="btn-sair" OnClientClick="window.history.back(); return false;" />
         </header>
         <div class="container">
             <h1>Cadastro</h1>
@@ -383,7 +182,7 @@ button:hover, .asp-button:hover {
                 <label for="txtCidade">Cidade:</label>
                 <asp:TextBox ID="txtCidade" runat="server" CssClass="asp-textbox" placeholder="Digite sua cidade"></asp:TextBox>
             </div>
-             <div class="form-group">
+            <div class="form-group">
                 <label for="txtEstado">Estado:</label>
                 <asp:TextBox ID="txtEstado" runat="server" CssClass="asp-textbox" placeholder="Digite seu estado"></asp:TextBox>
             </div>
@@ -404,4 +203,3 @@ button:hover, .asp-button:hover {
     </form>
 </body>
 </html>
-

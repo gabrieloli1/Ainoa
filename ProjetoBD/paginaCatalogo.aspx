@@ -14,7 +14,131 @@
 <link href="assets/css/header.css?v=2" rel="stylesheet" />
 <link href="assets/css/footer.css?v=2" rel="stylesheet" />
 <link href="assets/css/catalogo.css?v=2" rel="stylesheet" />
+    <style>
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.marca {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center; 
+    margin: 5px 0; 
+    color: #d5006d; 
+}
+
+.produto {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.1em;
+ text-align: center;
+ margin: 5px 0;
+        }
+
+.preco {
+ font-family: 'Montserrat', sans-serif; 
+ font-weight: bold;
+ font-size: 1.5em; 
+ text-align: center; 
+ color: #d5006d; 
+ margin: 5px 0; 
+}
+
+button {
+  position: relative;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 80%;
+  padding: 15px 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000; 
+  background: transparent; 
+  cursor: pointer;
+  transition: ease-out 0.5s; 
+  border: 2px solid #d5006d; 
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #f5e3ae; 
+}
+
+button:hover {
+  color: rgb(255, 255, 255); 
+  box-shadow: inset 0 -100px 0 0 rgba(255, 182, 193, 0.8); 
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+
+
+#p1{
+  padding-top: 10vh;
+  }
+
+.ficprod {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    margin: 6vh; 
+    padding-top: 2vh; 
+}
+
+.ficprod img {
+  width: 27vh;
+  height: 37vh;
+  transition: all .3s ease-in-out;
+}
+
+.ficprod img:hover {
+  width: 28vh;
+  height: 38vh;
+}
+
+.paginas{
+  flex-direction: row;
+  display: flex;
+}
+
+#p4{
+  padding-bottom: 3vh;
+}
+@media screen and (max-width: 600px) {
+  main{
+      display: flex;
+      flex: 1;
+      align-items: center;
+      flex-direction: column;
+  
+  }
+
+  main p{
+    font-size: 1.4em;
+  }
+
+
+  .paginas{flex-direction: column;
+  
+  }
+
+  #p4{
+    padding-bottom: 5vh;
+  }
+
+  #p1{
+  padding-top: 10vh;
+  }
+}
+    </style>
 </head>
+    
 <body>
     <form id="form1" runat="server">
         <asp:Panel ID="pnlSidenav" runat="server" CssClass="sidenav">
@@ -25,9 +149,54 @@
         <a id="txtLogin" href="paginaLogin.aspx">Login</a>
     </asp:Panel>
     <header>
-        <asp:ImageButton ID="btnImage" ImageUrl="assets/imgs/menu.png" runat="server" OnClick="btnImage_Click   "/>
+        <asp:ImageButton ID="btnImage" ImageUrl="assets/imgs/menu.png" runat="server" OnClick="btnImage_Click"/>
         <a id="amano" href="index.aspx">AINOA</a>
     </header>
+        <main>
+        <div id="p1" class="paginas">
+
+          <div id="fic1" class="ficprod">
+            <img src="imgBatom.png">
+            <p class="marca">NARS</p> 
+            <p class="produto">Batom NARS Explicit</p>
+            <p class="preco">R$ 237,15</p> 
+            <button onclick="link('paginaingles1.html')">Comprar</button>
+        </div>
+
+
+          <div id="fic2" class="ficprod">
+            <img src="imgBatom.png">
+            <p class="marca">RABANNE</p> 
+            <p class="produto">lipgloss rabanne glowies</p>
+            <p class="preco">R$ 126,65</p> 
+            <button onclick="link('paginaingles1.html')">Comprar</button>
+        </div>
+
+         <div id="fic3" class="ficprod">
+            <img src="imgBatom.png">
+            <p class="marca">LANCÔME</p> 
+            <p class="produto">body & hair mist lancôme</p>
+            <p class="preco">R$ 233,23</p> 
+            <button onclick="link('paginaingles1.html')">Comprar</button>
+        </div>
+
+           <div id="fic4" class="ficprod">
+            <img src="imgBatom.png">
+            <p class="marca">CLINIQUE</p> 
+            <p class="produto">lápis delineador em gel clinique high impact</p>
+            <p class="preco">R$ 185,15</p> 
+            <button onclick="link('paginaingles1.html')">Comprar</button>
+        </div>
+
+           <div id="fic5" class="ficprod">
+            <img src="imgBatom.png">
+            <p class="marca">RABANNE</p> 
+            <p class="produto">perfume rabanne</p>
+            <p class="preco">R$ 237,15</p> 
+            <button onclick="link('paginaingles1.html')">Comprar</button>
+        </div>
+
+    </main>
     <footer>
     <div class="row">
         <div class="colu">

@@ -76,6 +76,7 @@
     <Content Include="assets\imgs\maquigem.png" />
     <Content Include="assets\imgs\menu.png" />
     <Content Include="assets\imgs\rosto.png" />
+    <Content Include="imgBatom.png" />
     <Content Include="index.aspx" />
     <Content Include="paginaCadastro.aspx" />
     <Content Include="paginaLogin.aspx" />
