@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\catalogo.css" />
     <Content Include="assets\css\footer.css" />
     <Content Include="assets\css\header.css" />
     <Content Include="assets\css\sobre.css" />
@@ -78,6 +79,7 @@
     <Content Include="index.aspx" />
     <Content Include="paginaCadastro.aspx" />
     <Content Include="paginaLogin.aspx" />
+    <Content Include="paginaCatalogo.aspx" />
     <Content Include="paginaProduto.aspx" />
     <Content Include="sobre.aspx" />
     <Content Include="Web.config" />
@@ -104,6 +106,13 @@
     </Compile>
     <Compile Include="paginaLogin.aspx.designer.cs">
       <DependentUpon>paginaLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginaCatalogo.aspx.cs">
+      <DependentUpon>paginaCatalogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginaCatalogo.aspx.designer.cs">
+      <DependentUpon>paginaCatalogo.aspx</DependentUpon>
     </Compile>
     <Compile Include="paginaProduto.aspx.cs">
       <DependentUpon>paginaProduto.aspx</DependentUpon>
