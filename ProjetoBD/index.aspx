@@ -12,7 +12,7 @@
     <title>AINOA</title>
     <link href="assets/css/header.css?v=2" rel="stylesheet" />
     <link href="assets/css/footer.css?v=2" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style.css?v=2" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -20,7 +20,7 @@
             <asp:LinkButton ID="btnClose" runat="server" OnClick="btnClose_Click" CssClass="closebtn" Text="&times;"></asp:LinkButton>
             <a href="index.aspx">Home</a>
             <a href="sobre.aspx">Sobre</a>
-            <a href="produtos.aspx">Produtos</a>
+            <a href="paginaCatalogo.aspx">Produtos</a>
             <a id="txtLogin" href="paginaLogin.aspx">Login</a>
         </asp:Panel>
         <header>
@@ -80,7 +80,7 @@
           <ul id="links">
             <li><a href="index.aspx">Home</a></li>
             <li><a href="sobre.aspx">Sobre</a></li>
-            <li><a href="paginaProduto.aspx">Produtos</a></li>
+            <li><a href="paginaCatalogo.aspx">Produtos</a></li>
             <li><a href="paginaLogin.aspx">Login</a></li>
           </ul></div>
         </div>
@@ -101,9 +101,9 @@
    </footer>
     </form>
     <style>
-nav {
-    background-image: url('assets/imgs/rosto.png');
-}
+    nav {
+        background-image: url('assets/imgs/rosto.png');
+    }
     </style>
 </body>
 </html>
