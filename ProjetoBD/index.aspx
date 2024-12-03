@@ -100,5 +100,10 @@
       </p>
    </footer>
     </form>
+    <style>
+nav {
+    background-image: url('assets/imgs/rosto.png');
+}
+    </style>
 </body>
 </html>

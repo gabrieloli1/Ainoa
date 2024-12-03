@@ -1,0 +1,19 @@
+﻿body {
+    margin: 0 auto;
+}
+
+#title {
+    background-image: url('assets/imgs/fundosobre.png');
+    background-color: red;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    height: 40rem;
+}
+
+    #title h1 {
+        font-size: 4rem;
+        font-family: cursive;
+        color: black;
+    }
