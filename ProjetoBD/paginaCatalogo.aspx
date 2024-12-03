@@ -160,7 +160,7 @@ button:active {
             <p class="marca">NARS</p> 
             <p class="produto">Batom NARS Explicit</p>
             <p class="preco">R$ 237,15</p> 
-            <button onclick="link('paginaingles1.html')">Comprar</button>
+            <button onclick="link('paginaProduto.aspx')">Comprar</button>
         </div>
 
 
