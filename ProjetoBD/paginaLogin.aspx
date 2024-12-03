@@ -6,7 +6,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Login</title>
     <style>
-        /* Estilos gerais */
         * {
             margin: 0;
             padding: 0;
@@ -95,12 +94,11 @@
             flex-direction: column;
         }
 
-        /* Botão de sair */
         .btn-sair {
             position: absolute;
             top: 20px;
-            left: 20px; /* Mudei para o canto esquerdo */
-            background-color: #d9534f; /* Cor vermelha */
+            left: 20px; 
+            background-color: #d9534f;
             color: white;
             border: none;
             border-radius: 5px;
@@ -112,13 +110,17 @@
         }
 
         .btn-sair:hover {
-            background-color: #c9302c; /* Cor vermelha escura no hover */
+            background-color: #c9302c; 
         }
 
-        /* Responsividade */
-        @media (max-width: 768px) {
+        @media screen and (max-width: 600px) {
             .container {
                 padding: 4%;
+                width: 70%;
+            }
+
+            button, .asp-button, .form-group input, .form-group, .asp-textbox {
+                width: 70%;
             }
 
             h1 {

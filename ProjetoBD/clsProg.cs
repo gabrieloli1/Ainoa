@@ -165,34 +165,11 @@ namespace ProjetoBD
             }
 
 
-        }
+        }  
 
 
 
-        public void VerificarInfo(string[] info)
-        {
-            // Verifica se o array é nulo ou vazio
-            if (info == null || info.Length == 0)
-            {
-                _verificacao = false; // Define como falso se não houver informações
-                return;
-            }
-
-            // Inicialmente considera válido
-            _verificacao = true;
-
-            // Itera sobre cada item no array
-            foreach (string item in info)
-            {
-                // Verifica se o item é nulo, vazio ou não está no tamanho permitido
-                if (string.IsNullOrEmpty(item) || item.Length < 16 || item.Length > 100)
-                {
-                    _verificacao = false; // Define como falso se encontrar um item inválido
-                    return; // Sai do método imediatamente
-                }
-            }
-        }
+    
 
     }
-
 }
