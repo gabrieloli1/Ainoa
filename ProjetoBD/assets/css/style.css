@@ -86,3 +86,70 @@ main {
         padding: 10px;
     }
 
+@media (max-width: 600px) {
+    nav {
+        height: 50vh;
+        flex-direction: column;
+    }
+
+    #col {
+        margin: 0 auto; 
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #make {
+        height: 40vh;
+        width: 100%;
+        margin-top: 5vh;
+        margin-left: 0;
+    }
+
+    .meio {
+        width: 100%;
+    }
+
+    #m2 {
+        flex-direction: column;
+        margin: 5vh 0;
+    }
+
+    #title h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #txt p {
+        font-size: 1.2rem;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    #blz {
+        width: auto;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #saiba {
+        font-size: 4vw;
+    }
+
+    #fundosaiba {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+}
