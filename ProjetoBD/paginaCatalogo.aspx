@@ -87,19 +87,19 @@ button:active {
     flex: 1;
     align-items: center;
     flex-direction: column;
-    margin: 6vh; 
+    margin: 7vh; 
     padding-top: 2vh; 
 }
 
 .ficprod img {
-  width: 27vh;
-  height: 37vh;
+  width: 28vh;
+  height: 38vh;
   transition: all .3s ease-in-out;
 }
 
 .ficprod img:hover {
-  width: 28vh;
-  height: 38vh;
+  width: 29vh;
+  height: 39vh;
 }
 
 .paginas{
@@ -156,16 +156,16 @@ button:active {
         <div id="p1" class="paginas">
 
           <div id="fic1" class="ficprod">
-            <img src="imgBatom.png">
+            <img src="assets/imgs/imgBatom.png">
             <p class="marca">NARS</p> 
             <p class="produto">Batom NARS Explicit</p>
             <p class="preco">R$ 237,15</p> 
-            <button onclick="link('paginaingles1.html')">Comprar</button>
+            <button onclick="link('paginaProduto.aspx')">Comprar</button>
         </div>
 
 
           <div id="fic2" class="ficprod">
-            <img src="imgBatom.png">
+            <img src="assets/imgs/imgGloss.png">
             <p class="marca">RABANNE</p> 
             <p class="produto">lipgloss rabanne glowies</p>
             <p class="preco">R$ 126,65</p> 
@@ -173,7 +173,7 @@ button:active {
         </div>
 
          <div id="fic3" class="ficprod">
-            <img src="imgBatom.png">
+            <img src="assets/imgs/imgBody.png">
             <p class="marca">LANCÔME</p> 
             <p class="produto">body & hair mist lancôme</p>
             <p class="preco">R$ 233,23</p> 
@@ -181,7 +181,7 @@ button:active {
         </div>
 
            <div id="fic4" class="ficprod">
-            <img src="imgBatom.png">
+            <img src="assets/imgs/imgDelineado.png">
             <p class="marca">CLINIQUE</p> 
             <p class="produto">lápis delineador em gel</p>
             <p class="preco">R$ 185,15</p> 
@@ -189,7 +189,7 @@ button:active {
         </div>
 
            <div id="fic5" class="ficprod">
-            <img src="imgBatom.png">
+            <img src="assets/imgs/imgPerfume.png">
             <p class="marca">RABANNE</p> 
             <p class="produto">perfume rabanne</p>
             <p class="preco">R$ 237,15</p> 

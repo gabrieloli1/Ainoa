@@ -76,7 +76,11 @@
     <Content Include="assets\imgs\maquigem.png" />
     <Content Include="assets\imgs\menu.png" />
     <Content Include="assets\imgs\rosto.png" />
-    <Content Include="imgBatom.png" />
+    <Content Include="assets\imgs\imgBatom.png" />
+    <Content Include="assets\imgs\imgBody.png" />
+    <Content Include="assets\imgs\imgDelineado.png" />
+    <Content Include="assets\imgs\imgGloss.png" />
+    <Content Include="assets\imgs\imgPerfume.png" />
     <Content Include="index.aspx" />
     <Content Include="paginaCadastro.aspx" />
     <Content Include="paginaLogin.aspx" />
