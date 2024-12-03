@@ -183,7 +183,7 @@ button:active {
            <div id="fic4" class="ficprod">
             <img src="imgBatom.png">
             <p class="marca">CLINIQUE</p> 
-            <p class="produto">lápis delineador em gel clinique high impact</p>
+            <p class="produto">lápis delineador em gel</p>
             <p class="preco">R$ 185,15</p> 
             <button onclick="link('paginaingles1.html')">Comprar</button>
         </div>
