@@ -60,3 +60,58 @@
     margin-top: 20vh;
     margin-left: 4vw;
 }
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        background-color: #8A5858;
+    }
+
+    #title {
+        background-size: cover; /* Garante que o fundo cubra toda a área */
+        background-position: center;
+        height: 20rem; /* Reduz a altura para telas menores */
+        flex-direction: column; /* Ajusta para organização vertical */
+        text-align: center;
+        padding: 1rem;
+    }
+
+        #title h1 {
+            font-size: 2.5rem; /* Diminui o tamanho da fonte */
+        }
+
+    .make {
+        height: 15rem;
+        width: 100%;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    .text p {
+        font-size: 1.2rem;
+        width: 90%;
+        margin: 2rem auto; 
+    }
+
+    #txtvir p {
+        width: 90%;
+        font-size: 1rem; 
+        margin: 1rem auto; 
+    }
+
+    #white, #purple {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #white, #purple {
+        padding: 1rem;
+    }
+
+    .virginia {
+        height: 15rem;
+        width: 15rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+}
