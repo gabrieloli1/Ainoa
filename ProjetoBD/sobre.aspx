@@ -12,7 +12,7 @@
     <title></title>
 <link href="assets/css/header.css?v=2" rel="stylesheet" />
 <link href="assets/css/footer.css?v=2" rel="stylesheet" />
-<link href="assets/css/style.css" rel="stylesheet" />
+<link href="assets/css/sobre.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -28,14 +28,14 @@
                 <a id="amano" href="index.aspx">AINOA</a>
         </header>
         <main>
-                        <div id="title">
-                <h1>Drills</h1>
-            </div>
+        <div id="title">
+                <h1>Conheça a mais nova revolucionária do mercado!</h1>
+         </div>
             <div id="content">
                 <div id="purple ">
                 </div>
-                <svg id="bg" style="background-color:#ffffff;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#8A5858"></path>
+                <svg id="bg" style="background-color:#8A5858;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#ffffff"></path>
                 </svg>    
                 <div id="white" style="color:red">
                 </div>
@@ -84,6 +84,11 @@
         © 2024 - Todos os direitos reservados
       </p>
    </footer>
+        <style>
+            #title {
+                background-image: url('assets/imgs/fundosobre.png');
+            }
+        </style>
     </form>
 </body>
 </html>

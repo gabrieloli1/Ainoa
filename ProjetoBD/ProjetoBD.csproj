@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="assets\css\footer.css" />
     <Content Include="assets\css\header.css" />
+    <Content Include="assets\css\sobre.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\imgs\fundo.png" />
     <Content Include="assets\imgs\maquigem.png" />
