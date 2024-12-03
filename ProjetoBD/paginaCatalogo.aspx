@@ -162,8 +162,6 @@ button:active {
             <p class="preco">R$ 237,15</p> 
             <button onclick="link('paginaProduto.aspx')">Comprar</button>
         </div>
-
-
           <div id="fic2" class="ficprod">
             <img src="imgBatom.png">
             <p class="marca">RABANNE</p> 
