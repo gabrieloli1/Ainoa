@@ -113,38 +113,44 @@ namespace ProjetoBD
 
 
 
-        public void fazerPedido( string nomeProd)
+        public void fazerPedido(string nomeProd)
         {
             try
             {
-                conexao.Open();
 
-                SqlCommand comando = new SqlCommand();
-                comando.Connection = conexao;
-                comando.CommandType = CommandType.StoredProcedure;
-                comando.CommandText = "usp_fazerPedido";
+                if (conexao.State == ConnectionState.Closed)
+                {
+                    conexao.Open();
+                }
+
+                SqlCommand comando = new SqlCommand("usp_fazerPedido", conexao)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
                 comando.Parameters.AddWithValue("@idCli", _idUser);
-                comando.Parameters.AddWithValue("qntPedido", 1);
-                comando.Parameters.AddWithValue("nomeProduto", nomeProd);
+                comando.Parameters.AddWithValue("@qntPedido", 1);
+                comando.Parameters.AddWithValue("@nomeProduto", nomeProd);
+
                 int resultado = comando.ExecuteNonQuery();
+
+
                 if (resultado > 0)
                 {
-                    _situacao = "pedido realizado";
+                    _situacao = "Pedido realizado com sucesso.";
                 }
                 else
                 {
-                    _situacao = "erro ao fazer pedido";
+                    _situacao = "Erro ao fazer pedido.";
                 }
             }
             catch (SqlException ex)
             {
-                _situacao = "Erro ao entrar no banco de dados: " + ex.Message;
-                return;
+                _situacao = "Erro ao conectar ao banco de dados: " + ex.Message;
             }
         }
 
 
-       
+
         public class Pedido
 {
     public string NomeProd { get; set; }
