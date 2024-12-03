@@ -164,7 +164,7 @@ public List<Pedido> pegarInfoPedidos()
         {
             CommandType = CommandType.StoredProcedure
         };
-        comando.Parameters.AddWithValue("@idCli", "FB92546E-AF46-4D4C-A5A2-5F93D93EC4C4");
+        comando.Parameters.AddWithValue("@idCli", _idUser);
 
         SqlDataReader reader = comando.ExecuteReader();
 
@@ -174,7 +174,7 @@ public List<Pedido> pegarInfoPedidos()
             {
                 NomeProd = reader["nomeProd"].ToString(),
                 ValorPedido = Convert.ToInt32(reader["valorPed"]),
-                DataPed = reader["dataPed"].ToString(),
+                DataPed = Convert.ToDateTime(reader["dataPed"]).ToString("dd/MM/yyyy"),
                 QntPedido = Convert.ToInt32(reader["qntPed"])
             };
             pedidos.Add(pedido);
