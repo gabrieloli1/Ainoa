@@ -31,7 +31,6 @@
     </header>
         <main>
         <div id="p1" class="paginas">
-
           <div id="fic1" class="ficprod">
             <img src="assets/imgs/imgBatom.png">
             <p class="marca">NARS</p> 
