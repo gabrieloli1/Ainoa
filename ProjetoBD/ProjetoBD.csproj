@@ -85,7 +85,6 @@
     <Content Include="paginaCadastro.aspx" />
     <Content Include="paginaLogin.aspx" />
     <Content Include="paginaCatalogo.aspx" />
-    <Content Include="paginaProduto.aspx" />
     <Content Include="sobre.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -118,13 +117,6 @@
     </Compile>
     <Compile Include="paginaCatalogo.aspx.designer.cs">
       <DependentUpon>paginaCatalogo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="paginaProduto.aspx.cs">
-      <DependentUpon>paginaProduto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="paginaProduto.aspx.designer.cs">
-      <DependentUpon>paginaProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sobre.aspx.cs">

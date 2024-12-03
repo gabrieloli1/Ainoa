@@ -17,12 +17,31 @@ namespace ProjetoBD
         protected void btnCadastrar_Click(object sender, EventArgs e)
         {
             ClsProg prog = new ClsProg();
-            string[] dados = { txtNome.Text, txtCPF.Text, txtEmail.Text, txtSenha.Text, txtRua.Text, txtCEP.Text, txtCidade.Text, txtEstado.Text, txtComplemento.Text };
-            prog.VerificarInfo(dados);
-            prog.cadUser(txtNome.Text, txtCPF.Text, txtEmail.Text, txtSenha.Text, txtRua.Text, txtCEP.Text, txtCidade.Text, txtEstado.Text, txtComplemento.Text);
-            Response.Write($"<script>alert('{prog.Situacao}');</script>");
-            Response.Redirect("paginaLogin.aspx");
-            //oiiii tudobwmm
+            if (string.IsNullOrEmpty(txtNome.Text) ||
+                string.IsNullOrEmpty(txtCPF.Text) ||
+                string.IsNullOrEmpty(txtEmail.Text) ||
+                string.IsNullOrEmpty(txtSenha.Text) ||
+                string.IsNullOrEmpty(txtRua.Text) ||
+                string.IsNullOrEmpty(txtCEP.Text) ||
+                string.IsNullOrEmpty(txtCidade.Text) ||
+                string.IsNullOrEmpty(txtEstado.Text))
+            {
+                
+                Response.Write("<script>alert('Por favor, preencha todos os campos.');</script>");
+                return;
+            }
+
+            else
+            {
+                prog.cadUser(txtNome.Text, txtCPF.Text, txtEmail.Text, txtSenha.Text, txtRua.Text, txtCEP.Text, txtCidade.Text, txtEstado.Text, txtComplemento.Text);
+                string script = $@"
+            <script>
+            alert('{prog.Situacao}');
+            window.location.href = 'paginaLogin.aspx';
+            </script>";
+
+                Response.Write(script);
+            }
         }
       }
     

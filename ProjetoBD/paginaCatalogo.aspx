@@ -48,7 +48,7 @@ main {
  margin: 5px 0; 
 }
 
-button {
+.asp-button {
   position: relative;
   display: flex; 
   justify-content: center; 
@@ -67,12 +67,12 @@ button {
   box-shadow: inset 0 0 0 0 #f5e3ae; 
 }
 
-button:hover {
+.asp-button:hover {
   color: rgb(255, 255, 255); 
   box-shadow: inset 0 -100px 0 0 rgba(255, 182, 193, 0.8); 
 }
 
-button:active {
+.asp-button:active {
   transform: scale(0.9);
 }
 
@@ -158,42 +158,40 @@ button:active {
           <div id="fic1" class="ficprod">
             <img src="assets/imgs/imgBatom.png">
             <p class="marca">NARS</p> 
-            <p class="produto">Batom NARS Explicit</p>
+             <asp:Label ID="lblprod1" CssClass="produto" runat="server" Text="Batom NARS Explicit"></asp:Label>
             <p class="preco">R$ 237,15</p> 
-            <button onclick="link('paginaProduto.aspx')">Comprar</button>
+            <asp:Button ID="btnCompra1"  CssClass="asp-button" runat="server" Text="Comprar" OnClick="btnCompra1_Click" />
         </div>
-
-
           <div id="fic2" class="ficprod">
             <img src="assets/imgs/imgGloss.png">
             <p class="marca">RABANNE</p> 
-            <p class="produto">lipgloss rabanne glowies</p>
+            <asp:Label ID="lblprod2" CssClass="produto" runat="server" Text="lipgloss rabanne glowies"></asp:Label>
             <p class="preco">R$ 126,65</p> 
-            <button onclick="link('paginaingles1.html')">Comprar</button>
+            <asp:Button ID="btnCompra2"  CssClass="asp-button" runat="server" Text="Comprar" OnClick="btnCompra2_Click" />
         </div>
 
          <div id="fic3" class="ficprod">
             <img src="assets/imgs/imgBody.png">
             <p class="marca">LANCÔME</p> 
-            <p class="produto">body & hair mist lancôme</p>
+            <asp:Label ID="lblprod3" CssClass="produto" runat="server" Text="body & hair mist lancôme"></asp:Label>
             <p class="preco">R$ 233,23</p> 
-            <button onclick="link('paginaingles1.html')">Comprar</button>
+            <asp:Button ID="btnCompra3"  CssClass="asp-button" runat="server" Text="Comprar" OnClick="btnCompra3_Click" />
         </div>
 
            <div id="fic4" class="ficprod">
             <img src="assets/imgs/imgDelineado.png">
             <p class="marca">CLINIQUE</p> 
-            <p class="produto">lápis delineador em gel</p>
+             <asp:Label ID="lblprod4" CssClass="produto" runat="server" Text="lápis delineador em gel</"></asp:Label>
             <p class="preco">R$ 185,15</p> 
-            <button onclick="link('paginaingles1.html')">Comprar</button>
+            <asp:Button ID="btnCompra4"  CssClass="asp-button" runat="server" Text="Comprar" OnClick="btnCompra4_Click" />
         </div>
 
            <div id="fic5" class="ficprod">
             <img src="assets/imgs/imgPerfume.png">
             <p class="marca">RABANNE</p> 
-            <p class="produto">perfume rabanne</p>
+            <asp:Label ID="lblprod5" CssClass="produto" runat="server" Text="perfume rabanne"></asp:Label>
             <p class="preco">R$ 237,15</p> 
-            <button onclick="link('paginaingles1.html')">Comprar</button>
+            <asp:Button ID="btnCompra5"  CssClass="asp-button" runat="server" Text="Comprar" OnClick="btnCompra5_Click" />
         </div>
 
     </main>

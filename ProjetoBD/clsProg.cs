@@ -112,7 +112,7 @@ namespace ProjetoBD
 
 
 
-        public void fazerPedido(int quantidade, string nomeProd)
+        public void fazerPedido( string nomeProd)
         {
             try
             {
@@ -123,7 +123,7 @@ namespace ProjetoBD
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.CommandText = "usp_fazerPedido";
                 comando.Parameters.AddWithValue("@idCli", _idUser);
-                comando.Parameters.AddWithValue("qntPedido", quantidade);
+                comando.Parameters.AddWithValue("qntPedido", 1);
                 comando.Parameters.AddWithValue("nomeProduto", nomeProd);
                 int resultado = comando.ExecuteNonQuery();
                 if (resultado > 0)
@@ -165,29 +165,34 @@ namespace ProjetoBD
             }
 
 
-        }  
+        }
 
 
 
-        public void VerificarInfo(string[] info) //arrumar esse metodo nao esta funcionando corretamente
+        public void VerificarInfo(string[] info)
         {
-            if (info == null || info.Length == 0) 
+            // Verifica se o array é nulo ou vazio
+            if (info == null || info.Length == 0)
             {
-                _verificacao = false;
+                _verificacao = false; // Define como falso se não houver informações
                 return;
             }
 
-            _verificacao = true; 
+            // Inicialmente considera válido
+            _verificacao = true;
 
+            // Itera sobre cada item no array
             foreach (string item in info)
             {
-                if (string.IsNullOrEmpty(item) || item.Length <= 15 || item.Length > 100)
+                // Verifica se o item é nulo, vazio ou não está no tamanho permitido
+                if (string.IsNullOrEmpty(item) || item.Length < 16 || item.Length > 100)
                 {
-                    _verificacao = false; 
-                    break; 
+                    _verificacao = false; // Define como falso se encontrar um item inválido
+                    return; // Sai do método imediatamente
                 }
             }
         }
 
     }
+
 }

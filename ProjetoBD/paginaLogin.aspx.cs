@@ -16,12 +16,26 @@ namespace ProjetoBD
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            ClsProg prog = new ClsProg();
-            prog.logUser(txtEmail.Text, txtSenha.Text);
-            Response.Write($"<script>alert('{prog.Situacao}');</script>");
-            Response.Write($"<script>alert('{prog.IdUser}');</script>");
-            Response.Redirect("testeProd.aspx");
+            if (
+                string.IsNullOrEmpty(txtEmail.Text) ||
+                string.IsNullOrEmpty(txtSenha.Text) )
+            {
 
+                Response.Write("<script>alert('Por favor, preencha todos os campos.');</script>");
+                return;
+            }
+            else
+            {
+                ClsProg prog = new ClsProg();
+                prog.logUser(txtEmail.Text, txtSenha.Text);
+                string script = $@"
+            <script>
+            alert('{prog.Situacao}');
+            window.location.href = 'index.aspx';
+            </script>";
+
+                Response.Write(script);
+            }
         }
 
         protected void btnVoltar_Click(object sender, EventArgs e)
