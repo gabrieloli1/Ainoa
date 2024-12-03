@@ -23,5 +23,10 @@ namespace ProjetoBD
             Response.Redirect("testeProd.aspx");
 
         }
+
+        protected void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("index.aspx");
+        }
     }
 }

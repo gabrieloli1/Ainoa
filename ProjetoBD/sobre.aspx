@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Julius+Sans+One&family=Poetsen+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poetsen+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <title></title>
@@ -32,12 +33,29 @@
                 <h1>Conheça a mais nova revolucionária do mercado!</h1>
          </div>
             <div id="content">
-                <div id="purple ">
+                <div id="white">
+                    <div class="foto1">
+                        <img src="assets/imgs/mulher.png" class="make" alt="Sample Photo" />
+                    </div>
+                    <div class="text">
+                        <p>
+                            A Ainoa é uma loja online de cosméticos criada pelos amigos Gabriel Eiki e Gabriel Oliveira. 
+                            O objetivo é oferecer produtos de beleza de alta qualidade em uma plataforma prática e acessível, ideal para quem valoriza cuidados pessoais no dia a dia.</p>
+                    </div>
                 </div>
                 <svg id="bg" style="background-color:#8A5858;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
                   <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#ffffff"></path>
                 </svg>    
-                <div id="white" style="color:red">
+                <div id="purple">
+                    <div class="text" id="txtvir">
+                        <p>
+                            Com um catálogo diversificado, a Ainoa reúne produtos para pele, cabelo e maquiagem, priorizando marcas sustentáveis e cruelty-free. 
+                            Gabriel e Gabriel trabalham para tornar a experiência de compra única, promovendo beleza com responsabilidade e estilo.
+                        </p>
+                    </div>
+                    <div class="foto2">
+                            <img src="assets/imgs/virginia.png" class="virginia" alt="Sample Photo" />
+                    </div>
                 </div>
             </div>
         </main>
@@ -63,10 +81,10 @@
           <h3>Links</h3>
           <div id="left">
           <ul id="links">
-            <li><a href="index.html">The race</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="whatis.html">What it is?</a></li>
+            <li><a href="index.aspx">Home</a></li>
+            <li><a href="sobre.aspx">Sobre</a></li>
+            <li><a href="paginaProduto.aspx">Produtos</a></li>
+            <li><a href="paginaLogin.aspx">Login</a></li>
           </ul></div>
         </div>
         <div class="colu">

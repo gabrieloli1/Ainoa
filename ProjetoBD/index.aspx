@@ -78,10 +78,10 @@
           <h3>Links</h3>
           <div id="left">
           <ul id="links">
-            <li><a href="index.html">The race</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="whatis.html">What it is?</a></li>
+            <li><a href="index.aspx">Home</a></li>
+            <li><a href="sobre.aspx">Sobre</a></li>
+            <li><a href="paginaProduto.aspx">Produtos</a></li>
+            <li><a href="paginaLogin.aspx">Login</a></li>
           </ul></div>
         </div>
         <div class="colu">
