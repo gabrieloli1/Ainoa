@@ -22,6 +22,7 @@
             <a href="index.aspx">Home</a>
             <a href="sobre.aspx">Sobre</a>
             <a href="paginaCatalogo.aspx">Produtos</a>
+            <a href="paginaPedidos.aspx">Pedidos</a>
             <a id="txtLogin" href="paginaLogin.aspx">Login</a>
         </asp:Panel>
         <header>

@@ -18,7 +18,8 @@ namespace ProjetoBD
         private string _nomeProd;
         private int _qntPedido;
         private int _valorPedido;
-        private string _detalhePed;
+        private string _dataPed;
+
         private SqlConnection conexao;
 
         public int qntPedido { get => _qntPedido;}
@@ -143,56 +144,64 @@ namespace ProjetoBD
         }
 
 
-        public void pegarInfoPedidos()
+       
+        public class Pedido
+{
+    public string NomeProd { get; set; }
+    public int ValorPedido { get; set; }
+    public string DataPed { get; set; }
+    public int QntPedido { get; set; }
+}
+
+public List<Pedido> pegarInfoPedidos()
+{
+    List<Pedido> pedidos = new List<Pedido>();
+
+    try
+    {
+        conexao.Open();
+        SqlCommand comando = new SqlCommand("usp_consultarPedidos", conexao)
         {
-            conexao.Open();
-            SqlCommand comando = new SqlCommand();
-            comando.Connection = conexao;
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.CommandText = "usp_consultarPedidos";
-            comando.Parameters.AddWithValue("@idCli", _idUser);
-            SqlDataReader reader = comando.ExecuteReader();
-            if (reader.HasRows)
+            CommandType = CommandType.StoredProcedure
+        };
+        comando.Parameters.AddWithValue("@idCli", "FB92546E-AF46-4D4C-A5A2-5F93D93EC4C4");
+
+        SqlDataReader reader = comando.ExecuteReader();
+
+        while (reader.Read())
+        {
+            Pedido pedido = new Pedido
             {
-                reader.Read();
-                
-                _situacao = "usuario logado";
-
-            }
-            else
-            {
-                _situacao = "erro no login: informações inválidas";
-            }
-
-
+                NomeProd = reader["nomeProd"].ToString(),
+                ValorPedido = Convert.ToInt32(reader["valorPed"]),
+                DataPed = reader["dataPed"].ToString(),
+                QntPedido = Convert.ToInt32(reader["qntPed"])
+            };
+            pedidos.Add(pedido);
         }
 
-
-
-        public void VerificarInfo(string[] info)
+        reader.Close();
+    }
+    catch (Exception ex)
+    {
+        _situacao = $"Erro ao acessar o banco: {ex.Message}";
+    }
+    finally
+    {
+        if (conexao.State == ConnectionState.Open)
         {
-            // Verifica se o array é nulo ou vazio
-            if (info == null || info.Length == 0)
-            {
-                _verificacao = false; // Define como falso se não houver informações
-                return;
-            }
-
-            // Inicialmente considera válido
-            _verificacao = true;
-
-            // Itera sobre cada item no array
-            foreach (string item in info)
-            {
-                // Verifica se o item é nulo, vazio ou não está no tamanho permitido
-                if (string.IsNullOrEmpty(item) || item.Length < 16 || item.Length > 100)
-                {
-                    _verificacao = false; // Define como falso se encontrar um item inválido
-                    return; // Sai do método imediatamente
-                }
-            }
+            conexao.Close();
         }
-
     }
 
+    return pedidos;
+}
+
+
+
+
+
+
+
+    }
 }

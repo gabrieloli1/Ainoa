@@ -42,14 +42,13 @@
         }
 
         h1 {
-            color: #944242; /* Cor do título */
-            font-size: 2.2rem; /* Aumenta o tamanho da fonte */
-            margin-bottom: 2vh;
+            color: #944242; 
+            font-size: 2.2rem; 
             font-weight: bold;
         }
 
         .form-group {
-            margin-bottom: 3vh; /* Ajusta o espaçamento entre os campos */
+            margin-bottom: 3vh; 
             text-align: left;
         }
 
@@ -95,12 +94,12 @@
             margin-top: 3vh; 
         }
 
-        /* Estilos do botão "Sair" */
+        
         .btn-sair {
             position: absolute;
             top: 20px;
-            left: 20px; /* Posicionando no canto esquerdo */
-            background-color: #d9534f; /* Cor vermelha */
+            left: 20px; 
+            background-color: #d9534f; 
             color: white;
             border: none;
             border-radius: 5px;
@@ -112,14 +111,14 @@
         }
 
         .btn-sair:hover {
-            background-color: #c9302c; /* Cor vermelha escura no hover */
+            background-color: #c9302c; 
         }
 
-        /* Responsividade */
+       
         @media (max-width: 768px) {
             body {
                 padding: 0 3%;
-                height: auto; /* Permite ajuste dinâmico da altura */
+                height: auto; 
             }
 
             .container {
@@ -130,21 +129,21 @@
             }
 
             h1 {
-                font-size: 1.8rem; /* Reduz o tamanho do título */
+                font-size: 1.8rem; 
             }
 
             .form-group label {
-                font-size: 0.9rem; /* Ajusta o tamanho da fonte do label */
+                font-size: 0.9rem; 
             }
 
             .form-group input, .form-group .asp-textbox {
-                font-size: 0.9rem; /* Ajusta o tamanho da fonte do input */
-                padding: 1.5vh; /* Reduz o espaçamento interno */
+                font-size: 0.9rem;
+                padding: 1.5vh; 
             }
 
             button, .asp-button {
-                font-size: 0.9rem; /* Ajusta o tamanho da fonte do botão */
-                padding: 1.2vh; /* Ajusta o espaçamento interno */
+                font-size: 0.9rem; 
+                padding: 1.2vh; 
             }
         }
     </style>
@@ -153,7 +152,7 @@
 <body>
     <form id="form1" runat="server">
         <header>
-            <!-- Botão de sair -->
+            
             <asp:Button ID="btnSair" runat="server" Text="Sair" CssClass="btn-sair" OnClientClick="window.history.back(); return false;" />
         </header>
         <div class="container">
